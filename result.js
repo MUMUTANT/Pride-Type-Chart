@@ -67,7 +67,7 @@ const results = {
     リーダーシップを発揮するよりも信頼を置く相手の右腕や守護者として活躍する。
     コミュニケーションにおいては不器用なこともしばしば。`,
     example:`example>>
-    へし切長谷部(刀剣乱舞)、エルザ(FAIRYTAIL)`
+    へし切長谷部(刀剣乱舞)、リヴァイ(進撃の巨人)`
   },
   "down-3": {
     title: "カリスマ野心家",
@@ -267,3 +267,4 @@ typesBtn.addEventListener("click", () => {
   location.href = "othertypes.html";
 
 });
+
