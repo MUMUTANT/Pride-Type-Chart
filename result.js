@@ -239,7 +239,7 @@ if (chartImage.complete) {
 const retryBtn = document.getElementById("retryBtn");
 
 retryBtn.addEventListener("click", () => {
-  location.href = "quiz.html";
+  location.href = "index.html";
 });
 
 //共有ボタン
@@ -257,7 +257,7 @@ shareBtn.addEventListener("click", () => {
     `?text=${encodeURIComponent(text)}` +
     `&url=${encodeURIComponent(url)}`;
 
-  window.open(shareUrl, "_blank");
+  window.open(shareUrl, "https://mumutant.github.io/Pride-Type-Chart/");
 });
 
 
@@ -265,4 +265,5 @@ shareBtn.addEventListener("click", () => {
 const typesBtn = document.getElementById("typesBtn");
 typesBtn.addEventListener("click", () => {
   location.href = "othertypes.html";
+
 });
