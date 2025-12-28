@@ -1,0 +1,383 @@
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+    display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: center;     /* 縦中央 */
+  
+
+  height:100%;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+#startScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  gap: 32px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: -50px;
+}
+
+.subtitle {
+  font-family: "Audiowide", sans-serif;
+  letter-spacing: 0.05em;
+  color: #9b9b9b;
+  font-size: 18px;
+  margin-bottom: -10px;
+}
+
+.startBtn {
+  margin-top: 28px;
+  padding: 14px 48px;
+  font-size: 20px;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 100;
+  margin-top: -10px;
+
+  background: #A6FF2E;
+  color: #111;
+  border: none;
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.startBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #B6FF55; /* 少し明るく */
+}
+
+.startBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.01);
+}
+
+
+
+
+#quizScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  gap: 32px;
+}
+
+.question-box {
+  max-width: 720px;
+}
+
+#question {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #111;
+}
+
+
+
+.answer-buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.answer-button {
+  padding: 18px 56px;
+  font-size: 20px;
+  font-family: "Audiowide", sans-serif;
+
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.answer-button.yes {
+  background: #9CFF2E;
+  color: #111;
+}
+
+.answer-button.no {
+  background: #D6A7FF;
+  color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+.chart-wrapper {
+  position: relative;
+  width: 90%;       /* 画面幅の90% */
+  max-width: 900px; /* 最大でも360px */
+  height: auto;     /* 高さは縦横比で自動 */
+  margin: 0 auto;   /* 中央寄せ */
+}
+
+#chartimage {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+#chartline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none; /* クリック邪魔しない用 */
+  width: 100%;
+  height: 100%;
+}
+
+#resulttext {
+  white-space: pre-line;
+}
+
+.result-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.name-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.name-input input {
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 220px;
+}
+
+.name-input input::placeholder {
+  color: #aaa; 
+}
+
+
+body {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: flex-start; 
+  min-height: 100vh;      
+  margin: 0;
+  padding: 20px;          
+  box-sizing: border-box;
+  text-align: center;     
+}
+
+#yesBtn {
+  background: #9CFF2E;
+}
+#noBtn {
+  background: #D6A7FF;
+}
+#or{
+  font-family: "Audiowide", sans-serif;
+  font-size: 17px;
+}
+
+.answer-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.answer-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+.back-button {
+  margin-top: 16px;
+  background: none;
+  border: none;
+
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ------------------ Other Types ------------------ */
+
+.type-detail {
+  margin: 40px auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+body h1 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.type-detail h2 {
+  font-size: 30px;
+   color: #414141;
+  margin-bottom: 8px;
+}
+
+.type-detail p {
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ------------------ Result Screen ------------------ */
+#resultArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#resulttext {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+#resulttext h2 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 70px;
+  font-weight: 100;
+  margin-bottom: -50px;
+}
+
+#resulttext h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #8E8E8E;
+  margin-bottom: 40px;
+}
+
+#resulttext p1 {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+#resulttext p2 {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8E8E8E;
+  margin-top: 100px;
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+#chartimage {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+#chartline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.result-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap; /* スマホで横幅狭いときは改行 */
+  margin-top: 20px;
+}
+
+.result-buttons button {
+  padding: 14px 36px;
+  font-family: "Audiowide", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+#retryBtn {
+  background: #A6FF2E;
+  color: #111;
+  margin-right: 30px;
+}
+
+#shareBtn {
+  background: #111;
+  color: #fff;
+  margin-right: 30px;
+}
+
+#typesBtn {
+  background: #D6A7FF;
+  color: #111;
+}
+
+.result-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.result-buttons button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+

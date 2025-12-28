@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Start | プライド診断</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="startScreen">
+    <h1 class="title">プライドタイプ診断</h1>
+    <p class="subtitle">Pride Type Chart</p>
+
+    <div class="name-input">
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="診断したい人物の名前を入力"
+      >
+      <span>はプライドが高い</span>
+    </div>
+
+    <button class="startBtn" id="startBtn">Start.　</button>
+  </div>
+
+
+
+  <div id="quizScreen" style="display:none;">
+    <div class="question-box">
+      <p id="question"></p>
+    </div>
+
+    <div class="answer-buttons">
+      <button id="yesBtn" class="answer-button yes">Yes.</button>
+      <p id="or">or</p>
+      <button id="noBtn" class="answer-button no">No.</button>
+    </div>
+    <div>
+      <button id="backBtn" class="back-button">← 前の質問に戻る</button>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
